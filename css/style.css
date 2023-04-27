@@ -1,0 +1,177 @@
+/*font-family: 'Arvo', serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
+
+body {
+    margin: 0;
+}
+
+/*Header de todas las páginas*/
+header {
+    background-color:#f594a7;
+    font-family: "Montserrat";
+    font-weight: 400;
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 0;
+    margin-right: 50px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #232122;
+}
+
+.header__boton {
+    display: flex;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #972139;
+    font-weight: 500;
+    color: #f594a7;
+    border-radius: 1rem;
+    text-decoration: none;
+}
+
+.header__boton:hover {
+    background-color: #232122;
+}
+
+
+.main , .cuerpo_style {
+    background-color: rgba(245, 247, 243);
+    font-family: "Rubik";
+}
+
+
+/*footer de index y contacto*/
+
+footer {
+    background-color: #f594a7;
+}
+
+footer p {
+    font-family: "Rubik";
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.icon_footer {
+    font-size: 25px;
+    color: #972139;
+    margin: 15px;
+}
+
+.icon_footer:hover {
+    color: #232122;
+}
+
+#footer_index {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#footer_icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 50px;
+}
+
+/*titulos*/
+.titulo {
+    margin: 0;
+    font-family: "Rubik";
+    color: #232122;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.parrafo {
+    margin: 0;
+}
+.nombres {
+    margin: 0;
+}
+
+/*index*/
+.foto_index {
+    display: flex;
+    justify-content: center;
+}
+.recortes_index {
+    position: absolute;
+    display: flex;
+    align-self: flex-end;
+}
+
+.inicio_gali {
+    margin-right: 218px;
+}
+
+/*integrantes*/
+.section_integrantes { 
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+}
+
+.nombres { 
+    position: absolute;
+}
+
+.integrantes_boton { 
+    font-family: rubik;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #f594a7;
+    color: #F5F7F3;
+    border-radius: 1rem;
+    padding: 10px;
+    
+}
+
+.integrantes_boton:hover {
+    background-color: #972139;
+}
+
+/*escuchanos*/
+#header_escuchanos {
+    align-items: center;
+}
+
+.escuchanos_boton {
+    font-family: rubik;
+    font-weight: 500;
+    text-decoration: none;
+    background-color: #f594a7;
+    color: #F5F7F3;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px 20px;
+}
+
+
+/*galeria*/
+
+/*contacto*/
+#cuerpo_contacto {
+    display: flex;
+}
+
+.info_contacto {
+    font-family: Montserrat;
+    font-weight: 500;
+ }
