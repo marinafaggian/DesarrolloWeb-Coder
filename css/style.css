@@ -49,7 +49,7 @@ header ul li a {
 
 
 .main , .cuerpo_style {
-    background-color: rgba(245, 247, 243);
+    background-image: url(../assets/img/fondo-tata.jpg);
     font-family: "Rubik";
 }
 
@@ -92,11 +92,14 @@ footer p {
 /*titulos*/
 .titulo {
     margin: 0;
+    padding: 10px;
     font-family: "Rubik";
     color: #232122;
     font-weight: 700;
     display: flex;
     justify-content: center;
+    text-shadow: 2px 2px #3c3c3c;
+    font-size: xxx-large;
 }
 
 .parrafo {
@@ -111,14 +114,25 @@ footer p {
     display: flex;
     justify-content: center;
 }
+
+.imagen_principal{
+    border-radius: 1rem;
+}
 .recortes_index {
     position: absolute;
     display: flex;
     align-self: flex-end;
 }
 
+.inicio_jesi {
+    margin-right: 463px;
+    border-radius: 1rem;
+}
+
 .inicio_gali {
-    margin-right: 218px;
+    position: absolute;
+    margin-left: 504px;
+    margin-top: 34px;
 }
 
 /*integrantes*/
