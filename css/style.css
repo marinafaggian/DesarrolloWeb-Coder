@@ -124,12 +124,22 @@ footer p {
 /*integrantes*/
 .section_integrantes { 
     display: flex;
-    justify-content: stretch;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+.integrantes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
 }
 
 .nombres { 
     position: absolute;
+    align-self: self-end;
+    color:#f594a7;
+    
 }
 
 .integrantes_boton { 
@@ -140,7 +150,7 @@ footer p {
     color: #F5F7F3;
     border-radius: 1rem;
     padding: 10px;
-    
+    margin: 20px;
 }
 
 .integrantes_boton:hover {
