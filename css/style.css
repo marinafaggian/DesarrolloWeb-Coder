@@ -233,7 +233,6 @@ footer p {
     ;
 }
 
-
 /*galeria*/
 .main-galeria {
     grid-area: main;
@@ -273,7 +272,7 @@ footer p {
     display: grid;
     background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 45% 30% 25%;
-    grid-template-rows: 7% 36% 42% 8% 7%;
+    grid-template-rows: 6% 37% 42% 8% 7%;
     grid-template-areas: 
     "head head head"
     "main sec1 sec1"
@@ -284,11 +283,74 @@ footer p {
 }
 
 /*contacto*/
-#cuerpo_contacto {
+.header-contacto {
+    grid-area: head;
+}
+
+.section1-contacto {
+    grid-area: sec1;
+}
+
+.section2-contacto{
+    grid-area: sec2;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-contacto {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-contacto {
+    align-self: center;
 }
 
 .info_contacto {
     font-family: Montserrat;
     font-weight: 500;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+ }
+
+ section div p {
+    margin: 10px;
+ }
+
+ .fa-contacto {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.redes-contacto {
+    font-family: rubik;
+    font-weight: 500;
+    font-size: large;
+    text-decoration: none;
+    background-color:#972139;
+    color:#f594a7;
+    border-radius: 1rem;
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 9px;
+}
+
+ .grid-contacto {
+    display: grid;
+    background-image: url(../assets/img/fondo-tata.jpg);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 10% 80%;
+    grid-template-areas: 
+    "head head"
+    "sec1 sec1"
+    "sec2 main"
+    ;
  }
