@@ -354,3 +354,37 @@ footer p {
     "sec2 main"
     ;
  }
+
+
+@media (max-width: 576px) {
+    
+
+    /* index */
+
+
+    /* integrantes */
+
+
+    /* escuchanos */
+
+
+    /* galeria */
+    
+
+    
+    .grid-galeria {
+        grid-template-columns: 1;
+        grid-template-rows: 1fr, 4fr, 4fr, 1fr;
+        grid-template-areas:
+        "head"
+        "main"
+        "sec1"
+        "sec2"
+        "foot"
+        ;
+    }
+
+    /* contacto */
+    
+}
+ 
