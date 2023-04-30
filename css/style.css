@@ -78,7 +78,7 @@ footer p {
     color: #232122;
 }
 
-#footer_index {
+.footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -121,6 +121,7 @@ footer p {
 .foto_index {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .imagen_principal{
@@ -184,7 +185,23 @@ footer p {
 }
 
 /*escuchanos*/
-#header_escuchanos {
+.section-escuchanos{
+    grid-area: title;
+}
+
+.main-escuchanos{
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.aside-escuchanos {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
@@ -192,11 +209,28 @@ footer p {
     font-family: rubik;
     font-weight: 500;
     text-decoration: none;
-    background-color: #f594a7;
-    color: #F5F7F3;
+    background-color: #972139;
+    color:#f594a7;
     border-radius: 1rem;
     padding: 10px;
     margin: 20px 20px;
+}
+
+.escuchanos_boton:hover {
+    background-color: #232122;
+}
+
+.grid-escuchanos {
+    display: grid;
+    background-image: url(../assets/img/fondo-tata.jpg);
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 8% 9% 75% 8%;
+    grid-template-areas: 
+    "head head"
+    "title title"
+    "main aside"
+    "foot foot"
+    ;
 }
 
 
@@ -235,7 +269,7 @@ footer p {
     margin-bottom: 15px;
 }
 
-.grid-conteiner {
+.grid-galeria {
     display: grid;
     background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 45% 30% 25%;
