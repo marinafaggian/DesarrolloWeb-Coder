@@ -26,11 +26,21 @@
 <body>
     <header>
         <a class="header__boton" href="./views/escuchanos.html">Escuchanos</a>
-        <ul>
+        <ul class="header-desktop">
             <li><a href="./views/integrantes.html">¿Quiénes somos?</a></li>
             <li><a href="./views/galeria.html">Galería</a></li>
             <li><a href="./views/contacto.html">Contacto</a></li>
         </ul>
+        <div class="dropdown menu-desplegable">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars icon_footer"></i>
+            </button>
+            <ul class="dropdown-menu menu">
+              <li><a class="desplegable" href="./views/integrantes.html">¿Quiénes somos?</a></li>
+              <li><a class="desplegable" href="./views/galeria.html">Galería</a></li>
+              <li><a class="desplegable" href="./views/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
     </header>
     <main class="main main_index">
         <h1 class="titulo">TE AVISO TE ANUNCIO</h1>
