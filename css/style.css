@@ -411,6 +411,31 @@ footer p {
 
 
     /* escuchanos */
+    
+    .section-escuchanos {
+        text-align: center;
+    }
+
+    .main-escuchanos {
+        padding: 0px;
+    }
+
+    .aside-escuchanos {
+        display: none;
+    }
+
+    .grid-escuchanos {
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 10% 74% 8%;
+        grid-template-areas:
+        "head"
+        "title"
+        "main"
+        "foot"
+        ;
+    }
+
+
 
 
     /* galeria */
