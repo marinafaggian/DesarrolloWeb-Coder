@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- mi css -->
     <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../assets/img/tata logo.png">
@@ -28,12 +30,21 @@
 <body class="grid-galeria">
     <header>
         <a class="header__boton" href="escuchanos.html">Escuchanos</a>
-        <ul>
+        <ul class="header-desktop">
             <li><a href="../index.html">Inicio</a></li>
             <li><a href="integrantes.html">¿Quiénes somos?</a></li>
             <li><a href="contacto.html">Contacto</a></li>
         </ul>
-        <i class="menu-icon fa-solid fa-bars"></i>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-bars icon_footer"></i>
+            </button>
+            <ul class="dropdown-menu menu">
+              <li><a class="desplegable" href="../index.html">Inicio</a></li>
+              <li><a class="desplegable" href="./integrantes.html">¿Quiénes somos?</a></li>
+              <li><a class="desplegable" href="./contacto.html">Contacto</a></li>
+            </ul>
+          </div>
     </header>
     <main class="main-galeria">
         <iframe class="asset-style" width="560" height="315" src="https://www.youtube.com/embed/TRGFT0jAcEI" title="YouTube video player"
@@ -46,13 +57,13 @@
             allowfullscreen></iframe>
     </main>
     <section class="section1">
-        <img class="asset-style img-sec1" src="../assets/img/galeria/tata7.jpg" alt="Equipo de TATA">
-        <img class="asset-style img-sec1" src="../assets/img/galeria/tata8.jpg" alt="Galia y Jesi">
+        <img class="asset-style" src="../assets/img/galeria/tata7.jpg" alt="Equipo de TATA">
+        <img class="asset-style" src="../assets/img/galeria/tata8.jpg" alt="Galia y Jesi">
     </section>
     <section class="section2">
-        <img class="asset-style img-sec2" src="../assets/img/galeria/estudiocongo.jpg" alt="Estudio Congo">
+        <img class="asset-style" src="../assets/img/galeria/estudiocongo.jpg" alt="Estudio Congo">
         <div class="div-galeria">
-            <img class="asset-style img3 img-sec2" src="../assets/img/galeria/tata11.jpg" alt="Jesi y Galia">
+            <img class="asset-style img3" src="../assets/img/galeria/tata11.jpg" alt="Jesi y Galia">
             <img class="asset-style img-sec2" src="../assets/img/galeria/tata9.jpg" alt="Jesi y Galia">
         </div>
     </section>
@@ -65,5 +76,6 @@
         </div>
     </footer>
 </body>
-
+<!-- bootstrap js -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </html>
