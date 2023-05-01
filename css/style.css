@@ -49,7 +49,7 @@ header ul li a {
     background-color: #232122;
 }
 
-.dropdown {
+.menu-desplegable {
     display: none;
 }
 
@@ -374,7 +374,7 @@ footer p {
         display:none
     }
 
-    .dropdown {
+    .menu-desplegable {
         display: flex;
         justify-content: flex-end;
         align-items: center;
