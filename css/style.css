@@ -457,6 +457,10 @@ footer p {
         flex-direction: row;
     }
 
+    .img-congo {
+        width: 80%;
+    }
+
     .img-sec2 {
         display: none;
     }
