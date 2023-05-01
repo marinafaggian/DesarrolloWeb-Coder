@@ -405,7 +405,17 @@ footer p {
 
     
     /* index */
+    .titulo {
+        text-align: center;
+    }
 
+    .imagen_principal {
+        width: 90%;
+    }
+
+    .recortes_index {
+        display: none;
+    }
 
     /* integrantes */
 
