@@ -438,6 +438,7 @@ footer p {
 
     .main_index {
         grid-area: main;
+        background-repeat: repeat;
     }
 
     .titulo {
