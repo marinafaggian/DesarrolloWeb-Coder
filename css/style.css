@@ -426,6 +426,20 @@ footer p {
 
     
     /* index */
+    .grid-index {
+        grid-template-columns: 100%;
+        grid-template-rows: 8% 82% 10%;
+        grid-template-areas:
+        "head"
+        "main"
+        "foot"
+        ;
+    }
+
+    .main_index {
+        grid-area: main;
+    }
+
     .titulo {
         text-align: center;
     }
