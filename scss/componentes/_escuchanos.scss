@@ -1,0 +1,54 @@
+.grid-escuchanos { 
+    @include grid (50% 50% , 8% 9% 75% 8%,
+    "head head"
+    "title title"
+    "main aside"
+    "foot foot");
+    @media screen  and (max-width: 576px){
+        @include grid (100%, 8% 10% 74% 8%,
+        "head"
+        "title"
+        "main"
+        "foot")
+    }
+}
+
+.main-escuchanos {
+    grid-area: main;
+    @include flex (flex, center, center);
+    flex-direction: column;
+    padding-left: 10px;
+    @media screen  and (max-width: 576px){
+        padding: 0px;
+    }
+}
+
+.aside-escuchanos {
+    grid-area: aside;
+    @include flex (flex, center, center);
+    @media screen  and (max-width: 576px){
+        display: none;
+    }
+}
+
+.escuchanos_boton {
+    font-family: map-get($btn,font);
+    font-weight: map-get($btn,font-w);
+    text-decoration: map-get($btn,text-deco);
+    background-color: map-get($btn,bg-c);
+    color: map-get($btn,color);
+    border-radius: map-get($btn,border-r);
+    padding: 10px;
+    margin: 20px 20px;
+    &:hover{
+        background-color: nth($colores,2);
+    }
+}
+
+.section-escuchanos {
+    @media screen  and (max-width: 576px){
+        text-align: center;
+    }    
+}
+
+

@@ -1,0 +1,23 @@
+@mixin flex($displayF, $justify, $align){
+    display: $displayF;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex2 ($displayF, $justify){
+    display: $displayF;
+    justify-content: $justify;
+}
+
+@mixin grid($cols, $rows, $area){
+    display: grid;
+    background-image: url(../../assets/img/fondo-tata.jpg);
+    grid-template-columns: $cols;
+    grid-template-rows: $rows;
+    grid-template-areas: $area;
+}
+
+@mixin cuerpo-style{
+    background-image: url(../../assets/img/fondo-tata.jpg);
+    font-family: "Rubik";
+}

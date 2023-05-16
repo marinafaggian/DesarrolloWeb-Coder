@@ -1,0 +1,60 @@
+.foto_index {
+    @include flex2 (flex, center);
+    padding-bottom: 20px;
+}
+
+.imagen_principal {
+    border-radius: $border-r;
+    @media screen  and (max-width: 576px) { 
+        width: 90%;
+    }
+}
+
+.recortes_index {
+    position: absolute;
+    display: $display;
+    align-self: flex-end;
+    @media screen  and (max-width: 576px) {
+        display: none;
+    }
+}
+
+.inicio_jesi {
+    margin-right: 463px;
+    border-radius: $border-r;
+    transition: $transition;
+    &:hover{ 
+        transform: $transform;
+    }
+}
+
+.inicio_gali {
+    position: absolute;
+    margin-left: 504px;
+    margin-top: 34px;
+    transition: $transition;
+    &:hover{ 
+        transform: $transform;
+    }
+}
+
+.grid-index {
+    @media screen  and (max-width: 576px) {
+        @include grid (100%, 8% 82% 10%,
+        "head"
+        "main"
+        "foot")    
+    }
+}
+
+.main_index {
+    @media screen  and (max-width: 576px) {
+    grid-area: main;
+    background-repeat: repeat;
+    }
+}
+
+
+
+
+

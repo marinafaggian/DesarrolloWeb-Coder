@@ -1,0 +1,13 @@
+.titulo {
+    margin: $margin;
+    padding: $padding+10;
+    font-family: map-get($titulos,font);
+    color: map-get($titulos,color);
+    font-weight: map-get($titulos,font-w);
+    @include flex2 (flex, center);
+    text-shadow: map-get($titulos,text-sh);
+    font-size: map-get($titulos,font-s);
+    @media screen  and (max-width: 576px) {
+        text-align: center;
+    }
+}

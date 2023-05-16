@@ -1,0 +1,24 @@
+$header-btn:(
+bg-c: nth($colores,3),
+font-w: 500,
+text-deco: none,
+font-c: nth($colores,1)
+);
+
+
+$titulos:(
+font: "Rubik",
+color: nth($colores,4),
+font-w: 700,
+text-sh: 2px 2px nth($colores,5),
+font-s: xxx-large,
+);
+
+$btn:(
+font: "Rubik",
+font-w: 500,
+text-deco: none,
+bg-c: nth($colores,3),
+color: nth($colores,1),
+border-r: $border-r,
+);

@@ -1,0 +1,67 @@
+.section_integrantes {
+    @include flex (flex, space-evenly,center);
+    text-align: center;
+    @include cuerpo-style;
+    @media screen  and (max-width: 576px) {
+        grid-area: sec;
+        flex-direction: column;
+    }
+}
+
+.integrantes {
+    display: $display;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    margin-bottom: 0px;
+}
+
+.nombres {
+    position: absolute;
+    align-self: self-end;
+    color: nth($colores,3);
+    text-shadow: nth($colores,2);
+    margin-right: 5px;
+}
+
+.integrantes_boton{
+    font-family: map-get($btn,font);
+    font-weight: map-get($btn,font-w);
+    text-decoration: map-get($btn,text-deco);
+    background-color: map-get($btn,bg-c);
+    color: map-get($btn,color);
+    border-radius: map-get($btn,border-r);
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 9px;
+    &:hover{
+        background-color: nth($colores,2);
+    }
+}
+
+.parrafo {
+    margin: 0;
+    text-align: center;
+}
+
+.nombres{
+    margin: $margin;
+}
+
+.grid-integrantes{
+    @media screen  and (max-width: 576px) {
+    @include grid (100%, 5% 15% 75% 5%,
+    "head"
+    "main"
+    "sec"
+    "foot")
+    }
+}
+
+.main-integrantes {
+    grid-area: main;
+    justify-content: center;
+    text-align: center;
+}
+
+

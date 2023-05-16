@@ -1,0 +1,78 @@
+.grid-contacto {
+    @include grid (50% 50%, 10% 10% 80%, 
+    "head head"
+    "sec1 sec1"
+    "sec2 main");
+    @media screen  and (max-width: 576px){
+        @include grid (100%, 10% 20% 30% 50%,
+        "head"
+        "sec1"
+        "sec2"
+        "main");
+    }
+}
+
+.section1-contacto {
+    grid-area: sec1;
+    @media screen  and (max-width: 576px){
+        align-self: center;
+    }
+}
+
+.section2-contacto {
+    grid-area: sec2;
+    @include flex (flex, center, center);
+    flex-direction: column;
+    @media screen  and (max-width: 576px){
+        justify-content: flex-start;
+    }
+}
+
+.main-contacto {
+    grid-area: main;
+    @include flex (flex, center, center);
+}
+
+.img-contacto {
+    align-self: center;
+    @media screen  and (max-width: 576px){
+        display: none;
+    }
+}
+
+.info_contacto {
+    font-family: nth($fuentes,2);
+    font-weight: 500;
+    font-size: large;
+    @include flex (flex, center, center);
+    margin: 5px;
+}
+
+section{
+    div{
+        p{
+            margin: 10px;
+        }
+    }
+}
+
+.fa-contacto {
+    align-self: center;
+    margin-right: 20px;
+}
+
+.redes-contacto {
+    font-family: map-get($btn,font);
+    font-weight: map-get($btn,font-w);
+    font-size: large;
+    text-decoration: map-get($btn,text-deco);
+    background-color: map-get($btn,bg-c);
+    color: map-get($btn,color);
+    border-radius: map-get($btn,border-r);
+    padding: 10px;
+    margin: 20px;
+    margin-bottom: 9px;
+    &:hover{
+        background-color: nth($colores,2);
+    }
+}

@@ -1,0 +1,71 @@
+header {
+    background-color: nth($colores,1);
+    font-family: nth($fuentes,2);
+    font-weight: 400;
+    @include flex(flex,space-between,center);
+    grid-area: head;
+    @media screen and (max-width: 576px){
+        padding: $padding+20;
+    }
+    ul{
+        li{
+            list-style: none;
+        }
+            a{
+                text-decoration: none;
+                color: nth($colores,2);
+            }
+    }
+}
+
+.header-desktop {
+    display: $display;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: $margin;
+    margin-right: $margin+50;
+    @media screen and (max-width: 576px) {
+        display: none;
+    }
+}
+
+.header__boton {
+    display: $display;
+    margin: $margin+10;
+    padding: $padding+10 20px;
+    background-color: map-get($header-btn,bg-c);
+    font-weight: map-get($header-btn,font-w);
+    color: map-get($header-btn,font-c);
+    border-radius: $border-r;
+    text-decoration: map-get($header-btn,text-deco);
+    &:hover{
+        background-color: nth($colores,2);
+    }
+}
+
+.menu-desplegable {
+    display:none;
+    @media screen and (max-width: 576px){
+        @include flex (flex, flex-end, center);
+        margin-left: $margin+10;
+    }
+}
+
+.main {
+    @include cuerpo-style;
+}
+
+.menu {
+    @media screen and (max-width: 576px) {
+        background-color: nth($colores,3);        
+    }
+}
+
+.desplegable {
+    @media screen and (max-width: 576px) {
+        background-color: nth($colores,3);
+        color: nth($colores,1);
+        @include flex (flex, center, center);
+        font-size: large;
+    }
+}
