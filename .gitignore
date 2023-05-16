@@ -1,1 +1,7 @@
-wirefame completo.pdf
+node_modules
+package-lock.json
+package.json
+wireframe completo.pdf
+scss
+style.css.map
+style-antiguo.css
