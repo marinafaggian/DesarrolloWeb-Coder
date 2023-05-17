@@ -338,9 +338,6 @@ footer p {
   padding: 10px;
   margin: 20px 20px;
 }
-.escuchanos_boton:hover {
-  background-color: #232122;
-}
 
 @media screen and (max-width: 576px) {
   .section-escuchanos {
@@ -523,6 +520,36 @@ section div p {
 }
 .redes-contacto:hover {
   background-color: #232122;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(151, 33, 57, 0.8);
+  padding: 40px;
+  font-family: Montserrat;
+  font-weight: 300;
+  border-radius: 1rem;
+}
+
+.form-space {
+  margin: 20px 0px;
+  border: none;
+  background-color: rgb(245, 148, 167);
+  color: #232122;
+  border-radius: 1rem;
+  padding: 10px;
+}
+
+.btn-enviar {
+  font-family: "Rubik";
+  background-color: #232122;
+  color: #f594a7;
+  border-radius: 1rem;
+  padding: 5px;
+}
+.btn-enviar:hover {
+  background-color: #f594a7;
 }
 
 /*# sourceMappingURL=style.css.map */

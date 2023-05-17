@@ -62,10 +62,13 @@
         </div>
     </section>       
     <main class="main-contacto">
-            <form action="" method="get" enctype="">
-                <input placeholder="Nombre" type="text" required name="nombre">
-                <input placeholder="E-mail" type="email">
-                <textarea name="mensaje" cols="30" rows="5">Mensaje</textarea>
+            <form class="form" action="" method="post" enctype="">
+                <!-- <label for="nombre">Nombre</label> -->
+                <input class="form-space" placeholder="Nombre" type="text" required name="nombre">
+                <!-- <label for="E-mail">E-mail</label> -->
+                <input class="form-space" placeholder="E-mail" type="email">
+                <textarea class="form-space" placeholder="Mensaje" name="mensaje" cols="30" rows="5"></textarea>
+                <button type="submit" class="btn-enviar">Enviar</button>
             </form>
     </main>
 </body>

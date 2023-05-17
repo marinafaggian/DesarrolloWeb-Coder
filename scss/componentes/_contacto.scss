@@ -76,3 +76,34 @@ section{
         background-color: nth($colores,2);
     }
 }
+
+.form {
+    display: $display;
+    flex-direction: column;
+    background-color: rgb(151, 33, 57, 0.8);
+    padding: 40px;
+    font-family: nth($fuentes,2);
+    font-weight: 300;
+    border-radius: $border-r;
+
+}
+
+.form-space {
+    margin: 20px 0px;
+    border: none;
+    background-color: rgb(245, 148, 167);
+    color: nth($colores,2);
+    border-radius: $border-r;
+    padding: 10px;
+}
+
+.btn-enviar {
+    font-family: map-get($btn,font);
+    background-color: nth($colores,2);
+    color: nth($colores,1);
+    border-radius: map-get($btn,border-r);
+    padding: 5px;
+    &:hover{
+        background-color: nth($colores,1);
+    }
+}
