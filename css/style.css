@@ -63,11 +63,6 @@ header ul a {
   }
 }
 
-.main {
-  background-image: url(../../assets/img/fondo-tata.jpg);
-  font-family: "Rubik";
-}
-
 @media screen and (max-width: 576px) {
   .menu {
     background-color: #972139;
@@ -218,7 +213,6 @@ footer p {
   align-items: center;
   text-align: center;
   background-image: url(../../assets/img/fondo-tata.jpg);
-  font-family: "Rubik";
 }
 @media screen and (max-width: 576px) {
   .section_integrantes {

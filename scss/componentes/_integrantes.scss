@@ -1,7 +1,7 @@
 .section_integrantes {
     @include flex (flex, space-evenly,center);
     text-align: center;
-    @include cuerpo-style;
+    background-image: url(../../assets/img/fondo-tata.jpg); 
     @media screen  and (max-width: 576px) {
         grid-area: sec;
         flex-direction: column;

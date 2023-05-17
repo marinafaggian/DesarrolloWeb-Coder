@@ -16,8 +16,3 @@
     grid-template-rows: $rows;
     grid-template-areas: $area;
 }
-
-@mixin cuerpo-style{
-    background-image: url(../../assets/img/fondo-tata.jpg);
-    font-family: "Rubik";
-}

@@ -51,10 +51,6 @@ header {
     }
 }
 
-.main {
-    @include cuerpo-style;
-}
-
 .menu {
     @media screen and (max-width: 576px) {
         background-color: nth($colores,3);        
