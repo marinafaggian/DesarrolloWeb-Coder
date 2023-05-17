@@ -241,6 +241,11 @@ footer p {
   margin: 20px;
   margin-bottom: 0px;
 }
+@media screen and (max-width: 576px) {
+  .integrantes {
+    margin: 10px;
+  }
+}
 
 .nombres {
   position: absolute;
@@ -280,7 +285,7 @@ footer p {
     display: grid;
     background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
-    grid-template-rows: 5% 15% 75% 5%;
+    grid-template-rows: 4% 10% 82% 4%;
     grid-template-areas: "head" "main" "sec" "foot";
   }
 }
@@ -337,6 +342,9 @@ footer p {
   border-radius: 1rem;
   padding: 10px;
   margin: 20px 20px;
+}
+.escuchanos_boton:hover {
+  background-color: #232122;
 }
 
 @media screen and (max-width: 576px) {

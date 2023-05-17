@@ -40,6 +40,9 @@
     border-radius: map-get($btn,border-r);
     padding: 10px;
     margin: 20px 20px;
+    &:hover {
+        background-color: nth($colores,2);
+    }
 }
 
 .section-escuchanos {

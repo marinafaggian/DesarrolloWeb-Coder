@@ -21,6 +21,9 @@
     align-items: center;
     margin: 20px;
     margin-bottom: 0px;
+    @media screen  and (max-width: 576px){
+        margin: 10px;
+    }
 }
 
 .nombres {
@@ -58,7 +61,7 @@
 
 .grid-integrantes{
     @media screen  and (max-width: 576px) {
-    @include grid (100%, 5% 15% 75% 5%,
+    @include grid (100%, 4% 10% 82% 4%,
     "head"
     "main"
     "sec"
