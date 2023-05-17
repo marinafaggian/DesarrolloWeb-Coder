@@ -11,8 +11,13 @@
 
 @mixin grid($cols, $rows, $area){
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: $cols;
     grid-template-rows: $rows;
     grid-template-areas: $area;
+}
+
+@mixin cuerpo-style{
+    background-image: url(../assets/img/fondo-tata.jpg);
+    font-family: "Rubik";
 }

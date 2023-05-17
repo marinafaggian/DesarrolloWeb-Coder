@@ -193,13 +193,17 @@ footer p {
 @media screen and (max-width: 576px) {
   .grid-index {
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
     grid-template-rows: 8% 82% 10%;
     grid-template-areas: "head" "main" "foot";
   }
 }
 
+.main_index {
+  background-image: url(../assets/img/fondo-tata.jpg);
+  font-family: "Rubik";
+}
 @media screen and (max-width: 576px) {
   .main_index {
     grid-area: main;
@@ -207,12 +211,21 @@ footer p {
   }
 }
 
+.main-integrantes {
+  background-image: url(../assets/img/fondo-tata.jpg);
+  font-family: "Rubik";
+  grid-area: main;
+  justify-content: center;
+  text-align: center;
+}
+
 .section_integrantes {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
-  background-image: url(../../assets/img/fondo-tata.jpg);
+  background-image: url(../assets/img/fondo-tata.jpg);
+  font-family: "Rubik";
 }
 @media screen and (max-width: 576px) {
   .section_integrantes {
@@ -255,6 +268,7 @@ footer p {
 .parrafo {
   margin: 0;
   text-align: center;
+  font-size: large;
 }
 
 .nombres {
@@ -264,22 +278,16 @@ footer p {
 @media screen and (max-width: 576px) {
   .grid-integrantes {
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
     grid-template-rows: 5% 15% 75% 5%;
     grid-template-areas: "head" "main" "sec" "foot";
   }
 }
 
-.main-integrantes {
-  grid-area: main;
-  justify-content: center;
-  text-align: center;
-}
-
 .grid-escuchanos {
   display: grid;
-  background-image: url(../../assets/img/fondo-tata.jpg);
+  background-image: url(../assets/img/fondo-tata.jpg);
   grid-template-columns: 50% 50%;
   grid-template-rows: 8% 9% 75% 8%;
   grid-template-areas: "head head" "title title" "main aside" "foot foot";
@@ -287,7 +295,7 @@ footer p {
 @media screen and (max-width: 576px) {
   .grid-escuchanos {
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
     grid-template-rows: 8% 10% 74% 8%;
     grid-template-areas: "head" "title" "main" "foot";
@@ -342,7 +350,7 @@ footer p {
 
 .grid-galeria {
   display: grid;
-  background-image: url(../../assets/img/fondo-tata.jpg);
+  background-image: url(../assets/img/fondo-tata.jpg);
   grid-template-columns: 45% 30% 25%;
   grid-template-rows: 6% 37% 42% 8% 7%;
   grid-template-areas: "head head head" "main sec1 sec1" "main sec2 sec2" "none sec2 sec2" "foot foot foot";
@@ -350,7 +358,7 @@ footer p {
 @media screen and (max-width: 576px) {
   .grid-galeria {
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
     grid-template-rows: 3% 35% 32% 28% 3%;
     grid-template-areas: "head" "main" "sec1" "sec2" "foot";
@@ -429,7 +437,7 @@ footer p {
 
 .grid-contacto {
   display: grid;
-  background-image: url(../../assets/img/fondo-tata.jpg);
+  background-image: url(../assets/img/fondo-tata.jpg);
   grid-template-columns: 50% 50%;
   grid-template-rows: 10% 10% 80%;
   grid-template-areas: "head head" "sec1 sec1" "sec2 main";
@@ -437,7 +445,7 @@ footer p {
 @media screen and (max-width: 576px) {
   .grid-contacto {
     display: grid;
-    background-image: url(../../assets/img/fondo-tata.jpg);
+    background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
     grid-template-rows: 10% 20% 30% 50%;
     grid-template-areas: "head" "sec1" "sec2" "main";

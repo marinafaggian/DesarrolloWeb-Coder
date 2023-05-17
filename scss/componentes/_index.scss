@@ -48,6 +48,7 @@
 }
 
 .main_index {
+    @include cuerpo-style;
     @media screen  and (max-width: 576px) {
     grid-area: main;
     background-repeat: repeat;
