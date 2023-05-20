@@ -5,10 +5,11 @@
     "main aside"
     "foot foot");
     @media screen  and (max-width: 576px){
-        @include grid (100%, 8% 10% 74% 8%,
+        @include grid (100%, 8% 10% 54% 20% 8%,
         "head"
         "title"
         "main"
+        "aside"
         "foot")
     }
 }

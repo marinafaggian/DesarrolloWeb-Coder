@@ -38,11 +38,23 @@
     }
 }
 
+.img-index-media {
+    display: none;
+    @media screen  and (max-width: 576px) {
+        @include flex2 (flex, center);
+        width: 80%;
+        grid-area: img2;
+        margin-left: 35px;
+        border-radius: $border-r;
+    }
+}
+
 .grid-index {
     @media screen  and (max-width: 576px) {
-        @include grid (100%, 8% 82% 10%,
+        @include grid (100%, 8% 50% 34% 8%,
         "head"
         "main"
+        "img2"
         "foot")    
     }
 }

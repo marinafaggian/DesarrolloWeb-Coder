@@ -190,13 +190,27 @@ footer p {
   transform: scale(1.5);
 }
 
+.img-index-media {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .img-index-media {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    grid-area: img2;
+    margin-left: 35px;
+    border-radius: 1rem;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .grid-index {
     display: grid;
     background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
-    grid-template-rows: 8% 82% 10%;
-    grid-template-areas: "head" "main" "foot";
+    grid-template-rows: 8% 50% 34% 8%;
+    grid-template-areas: "head" "main" "img2" "foot";
   }
 }
 
@@ -302,8 +316,8 @@ footer p {
     display: grid;
     background-image: url(../assets/img/fondo-tata.jpg);
     grid-template-columns: 100%;
-    grid-template-rows: 8% 10% 74% 8%;
-    grid-template-areas: "head" "title" "main" "foot";
+    grid-template-rows: 8% 10% 54% 20% 8%;
+    grid-template-areas: "head" "title" "main" "aside" "foot";
   }
 }
 
