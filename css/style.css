@@ -341,9 +341,21 @@ footer p {
   justify-content: center;
   align-items: center;
 }
+
 @media screen and (max-width: 576px) {
-  .aside-escuchanos {
+  .img-escuchanos-desktop {
     display: none;
+  }
+}
+
+.img-escuchanos-media {
+  display: none;
+}
+@media screen and (max-width: 576px) {
+  .img-escuchanos-media {
+    display: flex;
+    border-radius: 1rem;
+    margin-bottom: 20px;
   }
 }
 

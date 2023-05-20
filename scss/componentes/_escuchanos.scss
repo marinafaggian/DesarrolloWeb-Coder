@@ -27,8 +27,20 @@
 .aside-escuchanos {
     grid-area: aside;
     @include flex (flex, center, center);
+}
+
+.img-escuchanos-desktop {
     @media screen  and (max-width: 576px){
         display: none;
+    } 
+}
+
+.img-escuchanos-media {
+    display: none;
+    @media screen  and (max-width: 576px){
+        display: flex;
+        border-radius: $border-r;
+        margin-bottom: 20px;
     }
 }
 
