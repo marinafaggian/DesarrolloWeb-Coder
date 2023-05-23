@@ -1,5 +1,5 @@
 .asset-style {
     border-radius: $border-r;
-    box-shadow: nth($colores,4);
+    box-shadow: 5px 5px nth($colores,4);
     width: auto;
 }

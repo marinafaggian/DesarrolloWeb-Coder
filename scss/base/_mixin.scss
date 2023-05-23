@@ -21,3 +21,8 @@
     background-image: url(../assets/img/fondo-tata.jpg);
     font-family: "Rubik";
 }
+
+@mixin assets-index{
+    border-radius: $border-r;
+    box-shadow: 5px 5px nth($colores,4);
+}

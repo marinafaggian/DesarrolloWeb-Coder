@@ -124,7 +124,7 @@ footer p {
 
 .asset-style {
   border-radius: 1rem;
-  box-shadow: rgba(35, 33, 34, 0.7);
+  box-shadow: 5px 5px rgba(35, 33, 34, 0.7);
   width: auto;
 }
 
@@ -157,6 +157,8 @@ footer p {
 @media screen and (max-width: 576px) {
   .imagen_principal {
     width: 90%;
+    border-radius: 1rem;
+    box-shadow: 5px 5px rgba(35, 33, 34, 0.7);
   }
 }
 
@@ -201,6 +203,7 @@ footer p {
     grid-area: img2;
     margin-left: 35px;
     border-radius: 1rem;
+    box-shadow: 5px 5px rgba(35, 33, 34, 0.7);
   }
 }
 
@@ -514,6 +517,7 @@ footer p {
 
 .img-contacto {
   align-self: center;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 576px) {
   .img-contacto {
@@ -525,6 +529,10 @@ footer p {
   font-family: Montserrat;
   font-weight: 500;
   font-size: large;
+  background-color: #972139;
+  padding: 3px 10px;
+  border-radius: 1rem;
+  color: #f594a7;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -564,6 +572,7 @@ section div p {
   font-family: Montserrat;
   font-weight: 300;
   border-radius: 1rem;
+  box-shadow: 5px 5px rgba(35, 33, 34, 0.7);
 }
 @media screen and (max-width: 576px) {
   .form {
@@ -583,6 +592,10 @@ section div p {
   .form-space {
     margin: 10px 0px;
   }
+}
+
+::placeholder {
+  color: #232122;
 }
 
 .btn-enviar {
